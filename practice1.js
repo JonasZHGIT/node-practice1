@@ -17,7 +17,7 @@ http.createServer(function(req, res) {
 			res.end();
 		});
 	}
-}).listen(8000);
+}).listen(process.env.PORT || 8000);
 
 function handleTime(pathname) {
 	var path = pathname.trim().substring(1);
